@@ -3,6 +3,7 @@ const cloudinary = require("cloudinary").v2;
 const fs = require("fs");
 
 module.exports = async (productFile, res) => {
+  console.log(productFile.mimetype.split("/"));
   if (!productFile.mimetype.startsWith("image"))
     return res
       .status(StatusCodes.BAD_REQUEST)

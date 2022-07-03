@@ -1,8 +1,8 @@
 const { StatusCodes } = require("http-status-codes");
 const Product = require("../model/Product");
 const deleteImage = require("../service/deleteImage");
-  const uploadImage = require("../service/uploadImage");
-  const cloudinary = require("cloudinary").v2;
+const uploadImage = require("../service/uploadImage");
+const cloudinary = require("cloudinary").v2;
 
 module.exports = {
   createProduct: async (req, res) => {
